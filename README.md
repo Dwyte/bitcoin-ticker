@@ -1,5 +1,14 @@
 # bitcoin-ticker
-A system tray app for linux that shows bitcoin's price live.  
+A system tray app for linux that shows bitcoin's price live. (Using Binance API)  
+
+You can change the refresh interval inside the coin.py script.  
+`REFRESH_TIME = 3`  
+Change the value(seconds) on the left side whatever you want. 
+
+You can change the pair as well other than BTCUSDT.  
+`EXCHANGE_API = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"`  
+Change the last part after `symbol=` to what ever pair you want that is currently on binance.
+
 ## Setup
 You'll need git, pip, and some dependencies installed.  
 `pip install pygobject`  
